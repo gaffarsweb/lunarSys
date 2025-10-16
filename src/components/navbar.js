@@ -1,7 +1,6 @@
 "use client"
 import { useState } from 'react';
-import logo from "../assets/img/logo.png";
-import Image from 'next/image';
+import LunarSysLogo from './LunarSysLogo';
 import SearchIcon from '@mui/icons-material/Search';
 import { Avatar } from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -18,13 +17,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-8">
                             <a href="#" className="text-white text-lg font-semibold w-full">
-                                <Image
-                                    // width={160}
-                                    // height={30}
-                                    className="h-[65px] py-2 w-[150px] lg:h-[90px] lg:w-[180px]"
-                                    src={logo}
-                                    alt="Logo"
-                                />
+                                <LunarSysLogo />
                             </a>
                         </div>
                         <div className="hidden gap-4 md:flex md:items-center">
@@ -32,8 +25,7 @@ const Navbar = () => {
                                 <Link href="/" className="text-black hover:text-gray-600 font-semibold">Home</Link>
                                 <Link href="#aboutUs" className="text-black hover:text-gray-600 font-semibold">About</Link>
                                 <Link href="#services" className="text-black hover:text-gray-600 font-semibold">Services</Link>
-                                <Link href="#products" className="text-black hover:text-gray-600 font-semibold">Products</Link>
-                                <Link href="#contactUs" className="text-black hover:text-gray-600 font-semibold">Contact</Link>
+                                <Link href="#contactForm" className="text-black hover:text-gray-600 font-semibold">Contact</Link>
                             </div>
                         </div>
                         <div className="-mr-2 flex md:hidden">
@@ -74,11 +66,7 @@ const Navbar = () => {
                             <span>Services</span>
                             <span className="transform group-hover:translate-x-1 transition">→</span>
                         </Link>
-                        <Link onClick={() => setIsOpen(!isOpen)} href="#products" className="group flex justify-between items-center text-base font-medium text-black hover:text-blue-600 transition duration-150">
-                            <span>Products</span>
-                            <span className="transform group-hover:translate-x-1 transition">→</span>
-                        </Link>
-                        <Link onClick={() => setIsOpen(!isOpen)} href="#contactUs" className="group flex justify-between items-center text-base font-medium text-black hover:text-blue-600 transition duration-150">
+                        <Link onClick={() => setIsOpen(!isOpen)} href="#contactForm" className="group flex justify-between items-center text-base font-medium text-black hover:text-blue-600 transition duration-150">
                             <span>Contact</span>
                             <span className="transform group-hover:translate-x-1 transition">→</span>
                         </Link>
