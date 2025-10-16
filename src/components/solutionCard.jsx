@@ -19,15 +19,15 @@ const SolutionCard = ({ title, description, iconUrl, bgUrl }) => {
 
       {/* Content */}
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-between p-3 sm:p-4 lg:p-6">
-        <div className="flex-1 flex items-center justify-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-full p-2 sm:p-3 lg:p-4 transition-all duration-300 group-hover:bg-white/20 group-hover:scale-110">
+        <div className="flex-1 -10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 flex items-center justify-center">
+          {/* <div className="bg-white/10 backdrop-blur-sm rounded-full p-2 sm:p-3 lg:p-4 transition-all duration-300 group-hover:bg-white/20 group-hover:scale-110">
             <img
               alt={`${title} icon`}
               className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 object-contain filter brightness-0 invert transition-transform duration-300"
               loading="lazy"
               src={iconUrl}
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="w-full text-white text-center sm:text-left">
